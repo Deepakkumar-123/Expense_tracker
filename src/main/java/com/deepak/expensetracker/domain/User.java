@@ -8,6 +8,14 @@ public class User {
     private String email;
     private String password;
 
+    /**
+     *
+     * @param userId
+     * @param firstName
+     * @param lastName
+     * @param email
+     * @param password
+     */
     public User(Integer userId, String firstName, String lastName, String email, String password) {
         this.userId = userId;
         this.firstName = firstName;
@@ -16,6 +24,10 @@ public class User {
         this.password = password;
     }
 
+    /**
+     *
+     * @return
+     */
     public Integer getUserId() {
         return userId;
     }

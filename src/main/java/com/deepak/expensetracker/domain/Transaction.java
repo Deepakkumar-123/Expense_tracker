@@ -2,6 +2,9 @@ package com.deepak.expensetracker.domain;
 
 public class Transaction {
 
+    /**
+     *
+     */
     private Integer transactionId;
     private Integer categoryId;
     private Integer userId;
@@ -9,6 +12,15 @@ public class Transaction {
     private String note;
     private Long transactionDate;
 
+    /**
+     *
+     * @param transactionId
+     * @param categoryId
+     * @param userId
+     * @param amount
+     * @param note
+     * @param transactionDate
+     */
     public Transaction(Integer transactionId, Integer categoryId, Integer userId, Double amount, String note, Long transactionDate) {
         this.transactionId = transactionId;
         this.categoryId = categoryId;
@@ -18,6 +30,10 @@ public class Transaction {
         this.transactionDate = transactionDate;
     }
 
+    /**
+     *
+     * @return
+     */
     public Integer getTransactionId() {
         return transactionId;
     }
